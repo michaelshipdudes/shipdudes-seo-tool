@@ -24,11 +24,16 @@ load_dotenv()
 # ---------------------------------------------------------------------------
 
 def _client():
-    api_key = os.getenv("ANTHROPIC_API_KEY")
+    api_key = None
+    try:
+        import streamlit as st
+        api_key = st.secrets["k-ant-api03-tOmEDP1iuRsN7_GcSfYzMHU92WZr0fgqxetVOPh6Klpw_pedKz8TO_clZKWS88aiCXDjwBtrvcTjZGIUglFWxw-AHvgxAAA"]
+    except Exception:
+        api_key = os.getenv("k-ant-api03-tOmEDP1iuRsN7_GcSfYzMHU92WZr0fgqxetVOPh6Klpw_pedKz8TO_clZKWS88aiCXDjwBtrvcTjZGIUglFWxw-AHvgxAAA")
     if not api_key:
         raise ValueError(
             "ANTHROPIC_API_KEY not found. "
-            "Copy .env.example to .env and add your key."
+            "Add it to Streamlit secrets or your .env file."
         )
     return anthropic.Anthropic(api_key=api_key)
 
