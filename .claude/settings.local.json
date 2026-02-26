@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd C:\\\\Users\\\\mike_\\\\shipdudes-seo-tool:*)",
+      "Bash(Get-Content:*)",
+      "Bash(tail:*)"
+    ]
+  }
+}

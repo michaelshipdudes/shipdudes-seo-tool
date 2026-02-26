@@ -1,0 +1,30 @@
+{
+  "competitors": [
+    {
+      "name": "ShipBob",
+      "url": "https://www.shipbob.com/blog/"
+    },
+    {
+      "name": "ShipMonk",
+      "url": "https://www.shipmonk.com/blog/"
+    },
+    {
+      "name": "Whiplash",
+      "url": "https://www.whiplash.com/blog/"
+    },
+    {
+      "name": "Red Stag Fulfillment",
+      "url": "https://redstagfulfillment.com/blog/"
+    },
+    {
+      "name": "ShipHero",
+      "url": "https://shiphero.com/blog/"
+    },
+    {
+      "name": "Flexport",
+      "url": "https://www.flexport.com/blog/"
+    }
+  ],
+  "last_run": null,
+  "last_run_stats": {}
+}
